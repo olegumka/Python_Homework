@@ -7,10 +7,10 @@ x = int(input("Введите первое неотрицительное чис
 y = int(input("Введите второе неотрицательно число "))
 
 
-def recursive_sum(x, y):
+def sum(x, y):
     if x == 0:
         return y
     else:
-        return recursive_sum(x - 1, y + 1)
+        return sum(x - 1, y + 1)
 
-print(recursive_sum(x, y))
+print(sum(x, y))
